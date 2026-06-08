@@ -28,8 +28,6 @@ cp config/database.example.php config/database.php
 cp config/integrations.example.php config/integrations.php
 ```
 
-Real API keys, database credentials, wallets and uploaded files must not be committed to the repository.
-
 ## Deployment
 
 See `DEPLOY_HOSTING.md` and `SECURITY_CHECKLIST.md` if these files are present in your working package. On production keep real configuration files only on the server.
