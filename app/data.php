@@ -1,0 +1,96 @@
+<?php
+declare(strict_types=1);
+
+return [
+    'company' => [
+        'name' => 'RungoCraft',
+        'tagline' => 'будівельні матеріали та інструменти',
+        'phone' => '+380937278561',
+        'phone_label' => '+38 (093) 727-85-61',
+        'email' => 'fatoha359@gmail.com',
+        'address' => 'м. Київ, вул. Куренівська, 15',
+        'worktime' => '8:00 - 20:00, без вихідних',
+        'city' => 'Київ',
+        'telegram_url' => 'https://t.me/rungocraft',
+    ],
+    'categories' => [
+        ['id' => 1, 'slug' => 'budivelni-materialy', 'name' => 'Будівельні матеріали', 'icon' => '▦', 'children' => [
+            ['slug' => 'sumishi', 'name' => 'Будівельні суміші'],
+            ['slug' => 'gipsokarton', 'name' => 'Гіпсокартонні системи'],
+            ['slug' => 'muruvalni', 'name' => 'Мурувальні матеріали'],
+            ['slug' => 'sypuchi', 'name' => 'Сипучі матеріали'],
+            ['slug' => 'utepluvach', 'name' => 'Утеплювач'],
+            ['slug' => 'kutky-mayaky-sitka', 'name' => 'Кути, маяки, сітка'],
+        ]],
+        ['id' => 2, 'slug' => 'santehnika', 'name' => 'Сантехніка', 'icon' => '◌', 'children' => [
+            ['slug' => 'kanalizatsiya', 'name' => 'Каналізація'],
+            ['slug' => 'vodopovid', 'name' => 'Водопровід'],
+            ['slug' => 'opalennya', 'name' => 'Опалення'],
+            ['slug' => 'fityngy', 'name' => 'Фітинги'],
+            ['slug' => 'zmishuvachi', 'name' => 'Змішувачі'],
+        ]],
+        ['id' => 3, 'slug' => 'elektryka', 'name' => 'Електрика', 'icon' => '⚡', 'children' => [
+            ['slug' => 'kabel', 'name' => 'Кабель'],
+            ['slug' => 'avtomaty', 'name' => 'Автомати'],
+            ['slug' => 'rozetky-vymykachi', 'name' => 'Розетки і вимикачі'],
+            ['slug' => 'osvitlennya', 'name' => 'Освітлення'],
+        ]],
+        ['id' => 4, 'slug' => 'instrumenty', 'name' => 'Інструменти та обладнання', 'icon' => '⚒', 'children' => [
+            ['slug' => 'instrument', 'name' => 'Електроінструмент'],
+            ['slug' => 'ruchnyi-instrument', 'name' => 'Ручний інструмент'],
+            ['slug' => 'drabyny', 'name' => 'Драбини'],
+            ['slug' => 'ziz', 'name' => 'ЗІЗ'],
+        ]],
+        ['id' => 5, 'slug' => 'pokrivlya-fasad', 'name' => 'Покрівля та фасад', 'icon' => '⌃', 'children' => [
+            ['slug' => 'pokrivlya', 'name' => 'Покрівельні матеріали'],
+            ['slug' => 'profnastyl', 'name' => 'Профнастил'],
+            ['slug' => 'metalocherepytsya', 'name' => 'Металочерепиця'],
+            ['slug' => 'vodostik', 'name' => 'Водостік'],
+            ['slug' => 'fasadni-materialy', 'name' => 'Фасадні матеріали'],
+        ]],
+        ['id' => 6, 'slug' => 'ozdoblennya', 'name' => 'Оздоблення', 'icon' => '▰', 'children' => [
+            ['slug' => 'farby', 'name' => 'Фарби, лаки, грунтовки'],
+            ['slug' => 'pidloga', 'name' => 'Підлогові покриття'],
+            ['slug' => 'himiya', 'name' => 'Будівельна хімія'],
+            ['slug' => 'plitka', 'name' => 'Плитка'],
+        ]],
+        ['id' => 7, 'slug' => 'derevyna-plyty', 'name' => 'Деревина та плити', 'icon' => '▥', 'children' => [
+            ['slug' => 'pylomaterialy', 'name' => 'Пиломатеріали'],
+            ['slug' => 'lystovi-materialy', 'name' => 'Листові матеріали'],
+            ['slug' => 'osb', 'name' => 'OSB'],
+            ['slug' => 'fanera', 'name' => 'Фанера'],
+        ]],
+        ['id' => 8, 'slug' => 'kriplennya-metal', 'name' => 'Кріплення та метал', 'icon' => '⌗', 'children' => [
+            ['slug' => 'kriplennya', 'name' => 'Кріплення'],
+            ['slug' => 'metaloprokat', 'name' => 'Металопрокат'],
+            ['slug' => 'armatura', 'name' => 'Арматура'],
+            ['slug' => 'metaleva-sitka', 'name' => 'Металева сітка'],
+        ]],
+    ],
+    'products' => [
+        ['id' => 1, 'sku' => 'RC-CEM-25', 'category' => 'sumishi', 'name' => 'Цемент М500, 25 кг', 'brand' => 'RungoBuild', 'price' => 168, 'old_price' => 189, 'unit' => 'мішок', 'stock' => 420, 'rating' => 4.8, 'image' => 'cement.svg', 'attrs' => ['Вага' => '25 кг', 'Марка' => 'М500', 'Фасування' => 'мішок', 'Призначення' => 'стяжка, кладка, ремонт']],
+        ['id' => 2, 'sku' => 'RC-GKL-125', 'category' => 'gipsokarton', 'name' => 'Гіпсокартон вологостійкий 12.5 мм', 'brand' => 'Knauf', 'price' => 312, 'old_price' => 349, 'unit' => 'лист', 'stock' => 180, 'rating' => 4.9, 'image' => 'drywall.svg', 'attrs' => ['Розмір' => '1200 x 2500 мм', 'Товщина' => '12.5 мм', 'Тип' => 'вологостійкий', 'Колір' => 'зелений']],
+        ['id' => 3, 'sku' => 'RC-OSB-10', 'category' => 'lystovi-materialy', 'name' => 'OSB-3 плита 10 мм', 'brand' => 'Swiss Krono', 'price' => 455, 'old_price' => 499, 'unit' => 'лист', 'stock' => 94, 'rating' => 4.7, 'image' => 'osb.svg', 'attrs' => ['Розмір' => '1250 x 2500 мм', 'Товщина' => '10 мм', 'Клас' => 'OSB-3', 'Призначення' => 'стіни, підлога, покрівля']],
+        ['id' => 4, 'sku' => 'RC-REB-12', 'category' => 'metaloprokat', 'name' => 'Арматура 12 мм A500C', 'brand' => 'Метінвест', 'price' => 38, 'old_price' => 42, 'unit' => 'м.п.', 'stock' => 2200, 'rating' => 4.6, 'image' => 'rebar.svg', 'attrs' => ['Діаметр' => '12 мм', 'Довжина' => '6 м', 'Клас' => 'A500C', 'Одиниця' => 'метр погонний']],
+        ['id' => 5, 'sku' => 'RC-ROOF-045', 'category' => 'pokrivlya', 'name' => 'Профнастил покрівельний 0.45 мм', 'brand' => 'RoofLine', 'price' => 286, 'old_price' => 319, 'unit' => 'м²', 'stock' => 760, 'rating' => 4.8, 'image' => 'roof.svg', 'attrs' => ['Товщина' => '0.45 мм', 'Покриття' => 'поліестер', 'Колір' => 'графіт', 'Гарантія' => '10 років']],
+        ['id' => 6, 'sku' => 'RC-DRILL-20', 'category' => 'instrument', 'name' => 'Шуруповерт акумуляторний 20В', 'brand' => 'RungoTools', 'price' => 1890, 'old_price' => 2190, 'unit' => 'шт.', 'stock' => 32, 'rating' => 4.9, 'image' => 'drill.svg', 'attrs' => ['Напруга' => '20В', 'АКБ' => '2 шт.', 'Кейс' => 'так', 'Гарантія' => '24 міс.']],
+        ['id' => 7, 'sku' => 'RC-GRUNT-10', 'category' => 'himiya', 'name' => 'Грунтовка універсальна 10 л', 'brand' => 'Ceresit', 'price' => 248, 'old_price' => 276, 'unit' => 'каністра', 'stock' => 140, 'rating' => 4.7, 'image' => 'primer.svg', 'attrs' => ['Обʼєм' => '10 л', 'Тип' => 'універсальна', 'Основа' => 'акрилова', 'Витрата' => '100-200 мл/м²']],
+        ['id' => 8, 'sku' => 'RC-PIPE-110', 'category' => 'opalennya', 'name' => 'Труба каналізаційна 110 мм', 'brand' => 'Wavin', 'price' => 142, 'old_price' => 159, 'unit' => 'шт.', 'stock' => 390, 'rating' => 4.8, 'image' => 'pipe.svg', 'attrs' => ['Діаметр' => '110 мм', 'Довжина' => '1 м', 'Матеріал' => 'ПВХ', 'Колір' => 'сірий']],
+        ['id' => 9, 'sku' => 'RC-WOOL-50', 'category' => 'utepluvach', 'name' => 'Мінеральна вата 50 мм', 'brand' => 'Isover', 'price' => 690, 'old_price' => 745, 'unit' => 'уп.', 'stock' => 80, 'rating' => 4.7, 'image' => 'insulation.svg', 'attrs' => ['Товщина' => '50 мм', 'Площа' => '10 м²', 'Тип' => 'плита', 'Призначення' => 'стіни, стеля']],
+        ['id' => 10, 'sku' => 'RC-BRICK-01', 'category' => 'muruvalni', 'name' => 'Цегла рядова М100', 'brand' => 'КерамБуд', 'price' => 11, 'old_price' => 13, 'unit' => 'шт.', 'stock' => 15000, 'rating' => 4.6, 'image' => 'brick.svg', 'attrs' => ['Марка' => 'М100', 'Формат' => '1НФ', 'Матеріал' => 'кераміка', 'Продаж' => 'від піддона']],
+        ['id' => 11, 'sku' => 'RC-PAINT-14', 'category' => 'farby', 'name' => 'Фарба інтерʼєрна біла 14 кг', 'brand' => 'Sniezka', 'price' => 720, 'old_price' => 799, 'unit' => 'відро', 'stock' => 55, 'rating' => 4.8, 'image' => 'paint.svg', 'attrs' => ['Колір' => 'білий', 'Вага' => '14 кг', 'Основа' => 'водно-дисперсійна', 'Поверхня' => 'стіни, стеля']],
+        ['id' => 12, 'sku' => 'RC-BUCKET-12', 'category' => 'inventar', 'name' => 'Відро будівельне 12 л', 'brand' => 'Hardy', 'price' => 88, 'old_price' => 99, 'unit' => 'шт.', 'stock' => 2281, 'rating' => 4.8, 'image' => 'bucket.svg', 'attrs' => ['Обʼєм' => '12 л', 'Колір' => 'чорний', 'Матеріал' => 'пластик', 'Призначення' => 'будівельні роботи']],
+    ],
+    'roles' => [
+        'client' => 'Клієнт',
+        'manager' => 'Менеджер',
+        'warehouse' => 'Склад',
+        'admin' => 'Адміністратор',
+    ],
+    'demo_users' => [
+        ['role' => 'client', 'name' => 'Клієнт RungoCraft', 'email' => 'client@rungo.test', 'phone' => '+380501111111', 'password' => 'client123'],
+        ['role' => 'manager', 'name' => 'Менеджер RungoCraft', 'email' => 'manager@rungo.test', 'phone' => '+380502222222', 'password' => 'manager123'],
+        ['role' => 'warehouse', 'name' => 'Склад RungoCraft', 'email' => 'sklad@rungo.test', 'phone' => '+380503333333', 'password' => 'sklad123'],
+        ['role' => 'admin', 'name' => 'Адміністратор RungoCraft', 'email' => 'admin@rungo.test', 'phone' => '+380504444444', 'password' => 'admin123'],
+    ],
+];

@@ -1,0 +1,670 @@
+.account-auth-grid {
+    display: grid;
+    grid-template-columns: minmax(360px, 520px) 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.account-info-card,
+.account-panel,
+.account-sidebar,
+.account-content {
+    background: #fff;
+    border: 1px solid var(--line, #e3e8ef);
+    border-radius: 22px;
+    box-shadow: var(--shadow, 0 18px 46px rgba(0, 69, 116, .13));
+}
+
+.account-info-card {
+    padding: 32px;
+}
+
+.account-info-card h2,
+.account-headline h2,
+.account-panel h3 {
+    color: var(--blue-dark, #00385f);
+}
+
+.account-feature-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.account-feature-list span {
+    padding: 14px 16px;
+    background: #f5f8fb;
+    border: 1px solid #e7edf3;
+    border-radius: 14px;
+    font-weight: 800;
+}
+
+.recaptcha-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 14px 16px;
+    margin: 14px 0;
+    border: 1px dashed rgba(255, 138, 0, .55);
+    border-radius: 14px;
+    background: #fff8ee;
+    color: #334155;
+}
+
+.account-section {
+    background: linear-gradient(180deg, #f3f6f8, #fff);
+}
+
+.account-shell {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.account-sidebar {
+    position: sticky;
+    top: 18px;
+    padding: 18px;
+}
+
+.account-user-card {
+    padding: 18px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--blue-dark, #00385f), var(--blue, #004574));
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.account-user-card strong,
+.account-user-card span {
+    display: block;
+}
+
+.account-user-card strong {
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.account-user-card span {
+    margin-top: 6px;
+    opacity: .82;
+    font-weight: 700;
+}
+
+.account-nav {
+    display: grid;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.account-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 13px;
+    color: #17212f;
+    font-weight: 800;
+    border: 1px solid transparent;
+    background: #fff;
+}
+
+.account-nav a:hover,
+.account-nav a.is-active {
+    color: var(--orange-dark, #e87500);
+    background: #fff8ee;
+    border-color: rgba(255, 138, 0, .28);
+}
+
+.account-nav b,
+.mini-count {
+    min-width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: var(--orange, #ff8a00);
+    color: #fff;
+    font-size: 12px;
+}
+
+.account-content {
+    padding: 28px;
+    min-height: 540px;
+}
+
+.account-headline {
+    margin-bottom: 22px;
+}
+
+.account-headline p {
+    margin: 0 0 7px;
+    color: var(--orange-dark, #e87500);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .08em;
+}
+
+.account-headline h2 {
+    margin: 0;
+    font-size: clamp(28px, 3vw, 42px);
+}
+
+.account-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.account-stats-grid a {
+    display: grid;
+    gap: 6px;
+    padding: 20px;
+    border-radius: 18px;
+    background: #f7fafc;
+    border: 1px solid #e7edf3;
+    color: #17212f;
+}
+
+.account-stats-grid b {
+    font-size: 34px;
+    color: var(--blue, #004574);
+}
+
+.account-stats-grid span {
+    color: #667085;
+    font-weight: 800;
+}
+
+.account-panel {
+    padding: 24px;
+    margin-bottom: 18px;
+    box-shadow: none;
+}
+
+.narrow-panel {
+    max-width: 680px;
+}
+
+.stack-form {
+    display: grid;
+    gap: 12px;
+}
+
+.stack-form label {
+    font-weight: 800;
+    color: #17212f;
+}
+
+.stack-form input,
+.stack-form textarea,
+.stack-form select {
+    width: 100%;
+    border: 1px solid #d9e1ea;
+    border-radius: 13px;
+    min-height: 44px;
+    padding: 10px 12px;
+    background: #fff;
+    outline: none;
+}
+
+.stack-form textarea {
+    min-height: 92px;
+    resize: vertical;
+}
+
+.stack-form input:focus,
+.stack-form textarea:focus,
+.stack-form select:focus {
+    border-color: var(--orange, #ff8a00);
+    box-shadow: 0 0 0 3px rgba(255, 138, 0, .12);
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-row input {
+    width: auto;
+    min-height: auto;
+}
+
+.account-two-col {
+    display: grid;
+    grid-template-columns: minmax(300px, 420px) 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.orders-list {
+    display: grid;
+    gap: 18px;
+}
+
+.order-card {
+    border: 1px solid #e3e8ef;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.order-card header {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, minmax(120px, auto));
+    gap: 14px;
+    padding: 18px;
+    background: #f7fafc;
+    border-bottom: 1px solid #e3e8ef;
+}
+
+.order-card span,
+.order-card-mini span,
+.muted {
+    color: #667085;
+}
+
+.order-card h3,
+.order-card b,
+.order-card strong {
+    color: #102235;
+}
+
+.order-items-table {
+    display: grid;
+    padding: 14px 18px;
+}
+
+.order-items-table div {
+    display: grid;
+    grid-template-columns: 1fr 110px 120px;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e3e8ef;
+}
+
+.order-items-table div:last-child {
+    border-bottom: 0;
+}
+
+.order-items-table small {
+    display: block;
+    color: #667085;
+    margin-top: 3px;
+}
+
+.status-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 18px 16px;
+}
+
+.status-timeline span {
+    display: grid;
+    gap: 2px;
+    padding: 9px 11px;
+    border-radius: 999px;
+    background: #eef5fb;
+    border: 1px solid #dbe7f0;
+}
+
+.status-timeline b {
+    font-size: 13px;
+}
+
+.status-timeline small {
+    font-size: 11px;
+    color: #667085;
+}
+
+.order-actions {
+    padding: 0 18px 18px;
+}
+
+.compact-orders {
+    gap: 10px;
+}
+
+.order-card-mini {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid #e3e8ef;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.order-card-mini div {
+    display: grid;
+}
+
+.order-card-mini em {
+    font-style: normal;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: #fff8ee;
+    color: var(--orange-dark, #e87500);
+    font-weight: 900;
+}
+
+.empty-state {
+    padding: 36px;
+    border: 1px dashed #dbe3ec;
+    border-radius: 22px;
+    background: #f7fafc;
+    text-align: center;
+}
+
+.account-products-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.account-product-card {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid #e3e8ef;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.account-product-card img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    background: #f6f8fa;
+    border-radius: 14px;
+}
+
+.account-product-card div {
+    display: grid;
+    gap: 5px;
+}
+
+.account-product-card span {
+    color: #667085;
+}
+
+.account-product-card strong {
+    color: var(--blue, #004574);
+    font-size: 20px;
+}
+
+.account-product-actions {
+    display: flex !important;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.comparison-wrap {
+    overflow-x: auto;
+    border: 1px solid #e3e8ef;
+    border-radius: 18px;
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border-bottom: 1px solid #e3e8ef;
+    border-right: 1px solid #e3e8ef;
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.comparison-table th {
+    width: 180px;
+    background: #f7fafc;
+    color: #102235;
+}
+
+.comparison-table img {
+    width: 110px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comparison-table td b,
+.comparison-table td strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.comparison-table button,
+.link-button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: var(--orange-dark, #e87500);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.address-card {
+    padding: 14px;
+    border: 1px solid #e3e8ef;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.address-card b,
+.address-card span,
+.address-card small {
+    display: block;
+}
+
+.address-card p {
+    margin: 8px 0;
+}
+
+.integration-note {
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: #eef5fb;
+    color: #35506b;
+    border: 1px solid #d8e5ef;
+    font-weight: 700;
+}
+
+.tiny-action-form,
+.inline-icon-form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.mini-count {
+    margin-left: 4px;
+}
+
+@media (max-width: 1100px) {
+    .account-auth-grid,
+    .account-shell,
+    .account-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .account-sidebar {
+        position: static;
+    }
+
+    .account-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .order-card header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .account-product-card {
+        grid-template-columns: 86px 1fr;
+    }
+
+    .account-product-actions {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .account-content {
+        padding: 18px;
+    }
+
+    .account-stats-grid,
+    .order-card header,
+    .order-items-table div {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card-mini {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.account-product-image,
+.account-product-title,
+.comparison-product-link {
+    color: inherit;
+    text-decoration: none;
+}
+.account-product-title:hover b,
+.comparison-product-link:hover b {
+    color: var(--orange-dark, #e87500);
+}
+.comparison-category-list {
+    display: grid;
+    gap: 24px;
+}
+.comparison-category-card {
+    border: 1px solid #e3e8ef;
+    border-radius: 22px;
+    background: #fff;
+    overflow: hidden;
+}
+.comparison-category-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    background: #f7fafc;
+    border-bottom: 1px solid #e3e8ef;
+}
+.comparison-category-head span {
+    display: block;
+    color: #667085;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 12px;
+    font-weight: 900;
+}
+.comparison-category-head h3 {
+    margin: 4px 0 0;
+    color: #0d304f;
+}
+.comparison-category-head b {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #fff4df;
+    color: #e87500;
+}
+.comparison-table--category th {
+    min-width: 170px;
+}
+.comparison-table--category td {
+    min-width: 260px;
+}
+.comparison-product-link img {
+    transition: transform .2s ease;
+}
+.comparison-product-link:hover img {
+    transform: translateY(-2px) scale(1.03);
+}
+.order-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 16px 18px 8px;
+}
+.order-details-grid div {
+    display: grid;
+    gap: 4px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: #f7fafc;
+    border: 1px solid #e3e8ef;
+}
+.order-details-grid .span-2 {
+    grid-column: span 2;
+}
+.order-items-title {
+    padding: 14px 18px 0;
+    color: #0d304f;
+    font-weight: 900;
+}
+@media(max-width: 900px) {
+    .order-details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 640px) {
+    .order-details-grid,
+    .order-details-grid .span-2 {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+}
+
+
+.comparison-wrap { position: relative; }
+.comparison-table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    box-shadow: 8px 0 14px rgba(15, 35, 55, .06);
+}
+.comparison-table tr:first-child th:first-child {
+    z-index: 4;
+}
+
+
+
+.comparison-wrap {
+    max-height: 72vh;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+.comparison-table tr:first-child td,
+.comparison-table tr:first-child th {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(15, 35, 55, .06);
+}
+.comparison-table tr:first-child th {
+    background: #f7fafc;
+    z-index: 6;
+}

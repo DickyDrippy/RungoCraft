@@ -1,0 +1,36 @@
+У views/pages/account.php заміни старий блок reCAPTCHA:
+
+<script defer src="/assets/js/recaptcha-auth.js"></script>
+<?php $recaptchaSiteKey = isset($auth) && method_exists($auth, 'recaptchaSiteKey') ? $auth->recaptchaSiteKey() : ''; ?>
+<?php if ($recaptchaSiteKey !== ''): ?>
+<script src="https://www.google.com/recaptcha/api.js?render=<?= e($recaptchaSiteKey) ?>"></script>
+<script>window.RC_RECAPTCHA_SITE_KEY = <?= json_encode($recaptchaSiteKey) ?>;</script>
+<?php endif; ?>
+
+на цей блок:
+
+<script defer src="/assets/js/recaptcha-auth.js?v=2"></script>
+<?php
+$recaptchaSiteKey = isset($auth) && method_exists($auth, 'recaptchaSiteKey') ? $auth->recaptchaSiteKey() : '';
+$recaptchaProvider = 'classic';
+$integrationPath = __DIR__ . '/../../config/integrations.php';
+if (is_file($integrationPath)) {
+    $integrationConfig = require $integrationPath;
+    $recaptchaConfig = is_array($integrationConfig['recaptcha'] ?? null) ? $integrationConfig['recaptcha'] : [];
+    $recaptchaProvider = strtolower((string)($recaptchaConfig['provider'] ?? 'classic'));
+    if (!empty($recaptchaConfig['enterprise'])) {
+        $recaptchaProvider = 'enterprise';
+    }
+}
+?>
+<?php if ($recaptchaSiteKey !== ''): ?>
+<?php if ($recaptchaProvider === 'enterprise'): ?>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=<?= e($recaptchaSiteKey) ?>"></script>
+<?php else: ?>
+<script src="https://www.google.com/recaptcha/api.js?render=<?= e($recaptchaSiteKey) ?>"></script>
+<?php endif; ?>
+<script>
+window.RC_RECAPTCHA_SITE_KEY = <?= json_encode($recaptchaSiteKey) ?>;
+window.RC_RECAPTCHA_PROVIDER = <?= json_encode($recaptchaProvider) ?>;
+</script>
+<?php endif; ?>

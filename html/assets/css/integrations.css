@@ -1,0 +1,9 @@
+.integration-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 24px}.integration-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 8px 22px rgba(20,30,40,.06)}.integration-card b{display:block;font-size:18px;color:var(--dark);margin-bottom:6px}.integration-card span{display:inline-flex;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900}.integration-card .ok{background:#e7f8ed;color:#19733a}.integration-card .warn{background:#fff4df;color:#9a5c00}.integration-actions{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.integration-actions form{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.integration-actions input,.integration-actions select{height:40px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:#fff}.compact-table td,.compact-table th{font-size:13px}.gateway-note{padding:14px 16px;background:#f8fafc;border:1px solid var(--line);border-radius:14px;color:var(--muted);margin:12px 0}@media(max-width:900px){.integration-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.integration-grid{grid-template-columns:1fr}}
+
+
+.admin-collapsible{border:1px solid var(--line,#e4e7eb);border-radius:16px;background:#fff;margin:18px 0;overflow:hidden;box-shadow:0 6px 20px rgba(20,30,40,.04)}
+.admin-collapsible>summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:900;color:#003b63;background:#f6f8fa;display:flex;align-items:center;justify-content:space-between}
+.admin-collapsible>summary::-webkit-details-marker{display:none}
+.admin-collapsible>summary:after{content:'Розгорнути';font-size:12px;color:#6d7580;font-weight:800}
+.admin-collapsible[open]>summary:after{content:'Згорнути'}
+.admin-collapsible>.empty-card,.admin-collapsible>.admin-table-wrap{margin:16px}

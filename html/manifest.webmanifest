@@ -1,0 +1,47 @@
+{
+  "name": "RungoCraft — будматеріали та інструменти",
+  "short_name": "RungoCraft",
+  "description": "Онлайн-магазин будівельних матеріалів, інструментів і сервісів доставки.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f3f6f8",
+  "theme_color": "#004574",
+  "lang": "uk-UA",
+  "categories": ["shopping", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Каталог",
+      "short_name": "Каталог",
+      "description": "Перейти до каталогу товарів",
+      "url": "/catalog?source=pwa_shortcut"
+    },
+    {
+      "name": "Кошик",
+      "short_name": "Кошик",
+      "description": "Відкрити кошик",
+      "url": "/cart?source=pwa_shortcut"
+    },
+    {
+      "name": "Кабінет",
+      "short_name": "Кабінет",
+      "description": "Відкрити особистий кабінет",
+      "url": "/account?source=pwa_shortcut"
+    }
+  ]
+}

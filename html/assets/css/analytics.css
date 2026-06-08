@@ -1,0 +1,208 @@
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    margin: 18px 0 24px;
+}
+
+.analytics-card {
+    background: linear-gradient(145deg, #ffffff, #f5f8fb);
+    border: 1px solid var(--line, #e4e7eb);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(0, 69, 116, .06);
+}
+
+.analytics-card span {
+    display: block;
+    color: var(--muted, #667085);
+    font-size: 12px;
+    font-weight: 800;
+    min-height: 34px;
+}
+
+.analytics-card b {
+    display: block;
+    margin-top: 10px;
+    color: var(--blue, #004574);
+    font-size: 30px;
+    line-height: 1;
+}
+
+.analytics-funnel {
+    background: #fff;
+    border: 1px solid var(--line, #e4e7eb);
+    border-radius: 18px;
+    padding: 22px;
+    margin: 20px 0 24px;
+}
+
+.analytics-funnel h3 {
+    margin: 0 0 18px;
+}
+
+.funnel-row {
+    display: grid;
+    grid-template-columns: 210px 1fr 70px;
+    gap: 14px;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.funnel-row span {
+    color: var(--text, #1d2937);
+    font-weight: 800;
+}
+
+.funnel-row div {
+    height: 14px;
+    background: #eef2f6;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.funnel-row i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--orange, #ff8a00), #ffb547);
+    border-radius: 999px;
+}
+
+.funnel-row b {
+    text-align: right;
+    color: var(--blue, #004574);
+}
+
+.analytics-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .analytics-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .analytics-grid,
+    .analytics-two-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .funnel-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .funnel-row b {
+        text-align: left;
+    }
+}
+
+
+.tab-panel[data-tab-panel="analytics"] {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.tab-panel[data-tab-panel="analytics"] .admin-panel-head {
+    margin-bottom: 12px;
+}
+
+.tab-panel[data-tab-panel="analytics"] .admin-panel-head h2 {
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+.analytics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 12px 0 16px;
+}
+
+.analytics-card {
+    border-radius: 14px;
+    padding: 12px 14px;
+    min-height: 86px;
+}
+
+.analytics-card span {
+    min-height: 0;
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+.analytics-card b {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.analytics-funnel {
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin: 14px 0 18px;
+}
+
+.analytics-funnel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.funnel-row {
+    grid-template-columns: 190px minmax(120px, 1fr) 56px;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.funnel-row span {
+    font-size: 14px;
+}
+
+.funnel-row div {
+    height: 10px;
+}
+
+.analytics-two-cols {
+    gap: 14px;
+    margin: 14px 0;
+}
+
+.tab-panel[data-tab-panel="analytics"] .admin-subtitle {
+    margin: 18px 0 10px;
+    font-size: 17px;
+}
+
+.tab-panel[data-tab-panel="analytics"] .admin-table th,
+.tab-panel[data-tab-panel="analytics"] .admin-table td {
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+    .analytics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .analytics-grid,
+    .analytics-two-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .funnel-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.cart-update-hidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}
+.analytics-details{border:1px solid var(--line);border-radius:18px;background:#fff;margin:14px 0;padding:12px 14px;box-shadow:0 8px 22px rgba(20,30,40,.04)}
+.analytics-details summary{cursor:pointer;font-weight:900;color:var(--blue);padding:8px 2px}
+.analytics-table-compact{max-height:360px;overflow:auto;border-radius:14px}
+.analytics-extra-row{opacity:.78}
+.admin-head-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.admin-table-wrap{max-width:100%;overflow:auto}.admin-order-status-form{min-width:260px}.admin-table td:last-child{min-width:180px}

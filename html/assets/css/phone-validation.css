@@ -1,0 +1,12 @@
+input[data-phone-ua].is-invalid,
+input[name="customer_phone"].is-invalid,
+input[name="phone"].is-invalid {
+    border-color: #d93025 !important;
+    box-shadow: 0 0 0 3px rgba(217, 48, 37, 0.12) !important;
+}
+
+.phone-format-hint {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 13px;
+}
